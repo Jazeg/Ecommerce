@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+input, button {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.email-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.google-button {
+    background-color: white;
+    color: black;
+}
+
+.apple-button {
+    background-color: black;
+    color: white;
+}
+
+.divider {
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}

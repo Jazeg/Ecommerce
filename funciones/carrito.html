@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito de Compras</title>
+    <!-- Importar Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Importar Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Importar CSS personalizado -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #ab2120;">
+      <a class="navbar-brand" href="#">Mi lista</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">
+              <i class="fas fa-home"></i> Inicio
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <div class="container" style="margin-top: 150px;">
+      <h1>Carrito de Compras</h1>
+      <div id="cart-items" class="mt-4">
+        <!-- Aquí se mostrarán dinámicamente los productos del carrito -->
+      </div>
+    </div>
+
+    <script>
+        function displayCartItems() {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            let cartItemsContainer = document.getElementById("cart-items");
+    
+            cartItemsContainer.innerHTML = "";
+    
+            cart.forEach((product) => {
+                let card = document.createElement("div");
+                card.classList.add("card", "mb-3", "d-flex", "flex-row");
+    
+                // Imagen del producto
+                let productImage = document.createElement("img");
+                productImage.classList.add("card-img-top");
+                productImage.src = product.image;
+                productImage.alt = product.name;
+                productImage.style.width = "137px";
+                productImage.style.height = "250px";
+                card.appendChild(productImage);
+    
+                // Detalle del producto
+                let cardBody = document.createElement("div");
+                cardBody.classList.add("card-body");
+    
+                // Nombre del producto
+                let productName = document.createElement("h5");
+                productName.classList.add("card-title");
+                productName.textContent = product.name;
+                cardBody.appendChild(productName);
+    
+                // Descripción del producto
+                let productDescription = document.createElement("p");
+                productDescription.classList.add("card-text");
+                productDescription.textContent = product.description;
+                cardBody.appendChild(productDescription);
+    
+                // Precio del producto
+                let productPrice = document.createElement("p");
+                productPrice.classList.add("card-text", "text-primary", "font-weight-bold", "mb-2");
+                productPrice.textContent = `S/ ${parseFloat(product.price).toFixed(2)}`;
+                cardBody.appendChild(productPrice);
+    
+                // Cantidad del producto
+                let productQuantity = document.createElement("p");
+                productQuantity.textContent = `Cantidad: ${product.quantity}`;
+                cardBody.appendChild(productQuantity);
+    
+                card.appendChild(cardBody);
+                cartItemsContainer.appendChild(card);
+            });
+        }
+    
+        document.addEventListener("DOMContentLoaded", function () {
+            displayCartItems();
+        });
+    </script>
+    <!-- Importar jQuery y Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Importar JavaScript personalizado -->
+    <script src="../js/script.js"></script>
+  </body>
+</html>

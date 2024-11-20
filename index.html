@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce</title>
+    <!-- Importar Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Importar Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Importar CSS personalizado -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #ab2120;">
+        <a class="navbar-brand" href="#">Ecommerce</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./funciones/carrito.html">
+                        <i class="fas fa-shopping-cart position-relative">
+                            <span id="cart-count" class="badge badge-pill badge-primary">0</span>
+                        </i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-user"></i><span> Login</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Fin de Navbar -->
+
+    <div class="custom-shape-divider-top-1718432199">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="container" style="margin-top: 500px;">
+      <h1>Bienvenido a Mi Ecommerce</h1>
+      <p>Explora nuestros productos y ofertas especiales.</p>
+    </div>
+
+  <!-- Inicio de los productos -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/img/Helado de chocolate.jpg" class="card-img-top" alt="Helado de Chocolate">
+                    <div class="card-body">
+                        <h5 class="card-title">Helado de Chocolate</h5>
+                        <p class="card-text">Delicioso helado de chocolate cremoso.</p>
+                        <p class="card-text text-primary font-weight-bold mb-2">S/ 15.00</p>
+                        <a href="#" class="btn btn-primary mb-2">Ver Producto</a>
+                        <a href="#" class="btn btn-success float-right addToCart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Aquí van las otras cards similares -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/img/Helado de vainilla.jpg" class="card-img-top" alt="Helado de Vainilla">
+                    <div class="card-body">
+                        <h5 class="card-title">Helado de Vainilla</h5>
+                        <p class="card-text">Delicioso helado de Vainilla.</p>
+                        <p class="card-text text-primary font-weight-bold mb-2">S/ 13.00</p>
+                        <a href="#" class="btn btn-primary mb-2">Ver Producto</a>
+                        <a href="#" class="btn btn-success float-right addToCart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/img/Helado de coco.jpg" class="card-img-top" alt="Helado de Coco">
+                    <div class="card-body">
+                        <h5 class="card-title">Helado de Coco</h5>
+                        <p class="card-text">Delicioso helado de coco cremoso.</p>
+                        <p class="card-text text-primary font-weight-bold mb-2">S/ 15.00</p>
+                        <a href="#" class="btn btn-primary mb-2">Ver Producto</a>
+                        <a href="#" class="btn btn-success float-right addToCart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/img/Helado de fresa.jpeg" class="card-img-top" alt="Helado de Coco">
+                    <div class="card-body">
+                        <h5 class="card-title">Helado de fresa</h5>
+                        <p class="card-text">Delicioso helado de fresa cremoso.</p>
+                        <p class="card-text text-primary font-weight-bold mb-2">S/ 12.00</p>
+                        <a href="#" class="btn btn-primary mb-2">Ver Producto</a>
+                        <a href="#" class="btn btn-success float-right addToCart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/img/Helado de menta.jpeg" class="card-img-top" alt="Helado de Menta">
+                    <div class="card-body">
+                        <h5 class="card-title">Helado de Menta</h5>
+                        <p class="card-text">Delicioso helado de menta.</p>
+                        <p class="card-text text-primary font-weight-bold mb-2">S/ 12.00</p>
+                        <a href="#" class="btn btn-primary mb-2">Ver Producto</a>
+                        <a href="#" class="btn btn-success float-right addToCart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/img/Helado de almendra.jpg" class="card-img-top" alt="Helado de Aalmendra">
+                    <div class="card-body">
+                        <h5 class="card-title">Helado de almendra</h5>
+                        <p class="card-text">Delicioso helado de almendra cremoso.</p>
+                        <p class="card-text text-primary font-weight-bold mb-2">S/ 18.00</p>
+                        <a href="#" class="btn btn-primary mb-2">Ver Producto</a>
+                        <a href="#" class="btn btn-success float-right addToCart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- Fin de los productos -->
+    
+
+    
+
+    <!-- Importar jQuery y Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Importar JavaScript personalizado -->
+    <script src="js/script.js"></script>
+
+
+    <footer class="text-light py-4 mt-5" style="background-color: #252423;">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Horario de atención</h5>
+                    <p>Lunes a Viernes: 10am - 8pm<br>Sábados y Domingos: 11am - 9pm</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Dirección</h5>
+                    <p>Av. Principal 123, Ciudad, País</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p>Email: info@tuheladeria.com<br>Teléfono: +123 456 789</p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col">
+                    <p>&copy; 2024 Tu Heladería. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+  </body>
+</html>
