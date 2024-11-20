@@ -2,7 +2,7 @@
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 let cartCount = cart.reduce((count, product) => count + product.quantity, 0);
 
-// Función para cargar el carrito desde el localStorage al cargar la página
+
 function loadCartFromLocalStorage() {
     cart = JSON.parse(localStorage.getItem('cart')) || [];
     cartCount = cart.reduce((count, product) => count + product.quantity, 0);
